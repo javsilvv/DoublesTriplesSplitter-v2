@@ -376,6 +376,10 @@
                 $copyBtn.textContent = '✅ Copiado';
                 setTimeout(() => { $copyBtn.textContent = oldText; }, 1200);
             });
+            // Limpiar campos 
+             $in.value = '';
+            $out.value = '';
+            $total.textContent = '0';
         });
 
         render();
